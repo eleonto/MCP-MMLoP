@@ -1,0 +1,7 @@
+# Custom6：自定义 6/7 类图像数据集（仓库内 dataset/ 目录，相对路径）
+DATASET:
+  NAME: "Custom6"
+  ROOT: "dataset"          # 相对路径：相对于运行 train.py 时的 cwd；若 cwd 不对，
+                           # datasets/custom6.py 会自动按 train.py 所在目录兜底解析。
+  NUM_SHOTS: -1            # -1 = 使用全部训练图片；若要少样本设为正整数
+  SUBSAMPLE_CLASSES: "all" # Custom6 一律使用全部类别

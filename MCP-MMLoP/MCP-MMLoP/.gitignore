@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Experiment outputs
+output/
+output*/
+tensorboard/
+
+# Model checkpoints
+*.pth
+*.pth.tar*
+*.pt
+
+# Data (datasets live outside the repo, but just in case)
+DATA/
+data/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Notebooks
+.ipynb_checkpoints/

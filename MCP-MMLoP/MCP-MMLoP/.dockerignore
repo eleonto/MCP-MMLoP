@@ -1,0 +1,19 @@
+# 构建 MMLoP Docker 镜像时排除的路径，减小 build context & 加速
+# 数据集、输出、缓存、pkl
+dataset/
+output/
+**/*.pkl
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+# git
+.git/
+.github/
+.gitignore
+# 日志与临时文件
+logs/
+*.log
+tmp/
+# 产物 tar 包（避免下次 build 把自身又拷进去）
+*.tar
+*.tar.gz
